@@ -18,8 +18,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/changeLog.sh > build.txt'
+                sh './jenkins/scripts/changeLog.sh jenkinsBuild..HEAD > build.txt'
             }
         }
-    }
+    }ls
 }
